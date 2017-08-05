@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/kfm_hashtag_logo_transparent_bg.png" /></a>
+          <nav>
+            <!-- <a href="{{ site.baseurl }}/about">Meet Keri</a> -->
+            <a href="https://www.facebook.com/keriformissouri"><i class="svg-icon facebook"></i></a>
+            <a href="https://www.twitter.com/thekeriingle"><i class="svg-icon twitter"></i></a>
+            <a href="https://secure.actblue.com/donate/keri"><img src="{{ site.baseurl }}/images/donate.jpg" width="60" height="60" /></a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <!-- <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div> -->
+
+    {% include analytics.html %}
+  </body>
+</html>
