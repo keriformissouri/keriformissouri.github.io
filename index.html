@@ -1,19 +1,45 @@
 ---
 layout: default
+title: Vote for Keri
+header_background_image: images/header.jpg
+newsletter_background_image: images/kcnight.jpg
 ---
+<header style="background-image: url({% include relative-src.html src=page.header_background_image %});">
+	<div class="container">
+		<h1 class="editable">Keri for Missouri</h1>
+                <div class="button">
+			<a href="https://secure.actblue.com/donate/keri">Donate Today</a>
+		</div>
+	</div>
+	<div class="learn-more"><a href="#learn-more">Meet Keri<span class="arrow">&#x25BC;</span></a></div>
+</header>
 
-<img src="{{ site.baseurl }}/images/keri3.jpg" />
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section id="learn-more">
+     <div class="container mission">
+		<h2 class="editable">Meet Keri</h2>
+		<p class="editable"><img src="images/keri.jpg" alt="Keri" width="200">Hi, I'm Keri. As a wife and mother of two, I see the challenges Missourians face&#59; exorbitant healthcare costs, underfunded schools, a criminal justice system struggling to keep its citizens safe, and a legislature which prefers divisiveness and sensationalism to pragmatic solutions to real life problems.</p>
+<p>I grew up in a military family who taught me the values of hard work, patriotism and dedication to the service of others. These are the values that have guided all of my professional pursuits.</p>
+<p>
+After graduating with a bachelors degree in Criminal Justice from the University of Central Oklahoma, I moved to Kansas City with my husband, Kenny. He accepted a position with Cerner and I began working for The Jackson County Children's Division. We really enjoyed the Kansas City area and decided we are Midwesterners at heart. It did not take long for us to decide that we wanted to plant roots in Lee's Summit and raise our family here.
+</p><p>At the Jackson County Children's Division, I worked to strengthen families, and to ensure the safety of Missouri's youngest citizens. It was working with these vulnerable populations that led me to pursue further education and ways to better enable me to advocate for the needs of the underserved.  
+<p>
+While completing my Masters degree in social work from the University of Kansas, I worked in several areas where I witnessed the gaps in healthcare Missourians experience, as well as the effects of generational poverty and trauma on children struggling to learn in underfunded classrooms. 
+</p>
+<p>These experiences left an indelible mark on me, and influenced my desire to do more to affect tangible, sustainable change. Whether in courtrooms, healthcare settings, or schools, I have fought and advocated for fairness, justice, and to amplify the voices of those struggling beneath the weight of bureaucracy.
+<p>
+I believe there are solutions to the issues that each of us face, and it's time that we work toward them together. I'm ready to keep fighting. I'm ready to fight for my family's future and the future of all Missouri's families. Let's do this.</p>
+	</div>
+</section>
 
-      <!-- <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<section class="newsletter" style="background-image: url({% include relative-src.html src=page.newsletter_background_image %});">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable">Sign up to hear the latest news and progress in our fight for your rights.</p>
+                <form method="POST" action="https://formspree.io/admin@keriformissouri.com">
+                    <input type="text" name="emailorphone" placeholder="Your email or phone number">
+                    <input type="hidden" name="_subject" value="Subscribe to keriformissouri.com" />
+                    <input type="submit" value="Sign up"/>
+                </form>
+	</div>
+</section>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div> -->
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Meet Keri</a>
-    </article>
-  {% endfor %}
-</div>
